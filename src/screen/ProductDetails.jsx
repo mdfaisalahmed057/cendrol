@@ -25,7 +25,7 @@ function ProductDetails({ route }) {
                 data={item.images}
                 horizontal
                 renderItem={({ item }) => (
-                  <Image source={{ uri: item }} style={{ width: width, aspectRatio: 1 }} />
+                  <Image source={{ uri: item }} style={{ width: width,aspectRatio: 1 }} />
                 )}
                 keyExtractor={(item, index) => index.toString()} />
 
@@ -72,29 +72,9 @@ const styles = StyleSheet.create({
     fontWeight: "300",
   },
 
-  image: {
-    width: '100%',
-    height: "80%",
-    aspectRatio: 1,
-  },
 
-  button: {
-    backgroundColor: 'black',
-    position: 'absolute',
-    bottom: 30,
-    width: '90%',
-    alignSelf: 'center',
-    alignItems: 'center',
-    padding: 20,
-    borderRadius: 100,
 
-  },
-
-  buttonText: {
-    color: 'white',
-    fontWeight: '500',
-    fontSize: 16,
-  }
+ 
 });
 
 export default ProductDetails

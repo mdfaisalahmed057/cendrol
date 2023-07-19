@@ -24,6 +24,7 @@ export default function ProductScreen() {
               onPress={() => {
                 navigation.navigate('productDetails', { productId: item.id });
               }}
+              style={{flex:1}}
             >
               <Text style={styles.title}>{item.title}</Text>
               <Image source={{ uri: item.thumbnail }} style={styles.image} />
@@ -32,6 +33,8 @@ export default function ProductScreen() {
           </View>
         )}
         numColumns={2}
+        columnWrapperStyle={{justifyContent:'space-between'}}
+        contentContainerStyle={{paddingBottom:10}}
       />
     </View>
   );
@@ -41,11 +44,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 10,
-    paddingVertical: 10
-
+     paddingHorizontal: 10,
+     paddingTop:10
+ 
 
   },
   title: {
@@ -54,10 +55,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 10
   },
   imagecontainer: {
-    width: "48%",
-    marginBottom: 10,
-    marginRight: 4,
-    borderRadius: 10,
+    flex:1,
+    aspectRatio:1,
+    margin:4,
+     borderRadius: 10,
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: '#D3D3D3',
