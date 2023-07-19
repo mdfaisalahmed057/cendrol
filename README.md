@@ -14,12 +14,12 @@ npm install
 
 Then, you can run the app in development mode by running the following command:
 
-react-native run-android or you can use expo 
-
+react-native run-android or you can use Expo 
+for the expo, you need to install the Expo app then click on the scan QR code and scan this https://expo.dev/@faisal057/cendrol?serviceType=classic&distribution=expo-go
 Usage
 The product screen displays a title and image for a product. When the user clicks on the product, it navigates to the details of the product screen.
 
-The details of the product screen displays more information about the product, such as the price, description, and title.
+The details of the product screen display more information about the product, such as the price, description, and title.
 
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request if you have any changes or improvements.
