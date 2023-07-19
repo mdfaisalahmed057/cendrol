@@ -1,5 +1,4 @@
-Product Screen
-This project is a React Native app that displays a product screen with a title and image. When the user clicks on the product, it navigates to the details of the product screen.
+ This project is a React Native app that displays a product screen with a title and image. When the user clicks on the product, it navigates to the details of the product screen.
 
 Getting Started
 To get started, you will need to have the following installed:
